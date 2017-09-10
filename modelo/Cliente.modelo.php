@@ -19,6 +19,10 @@ class ClienteModelo{
         $consulta = "DELETE FROM cliente WHERE id = " . $id;
         return $this->enlace->query($consulta);
     }
+    function agregarCliente($nombre, $apellido, $edad){
+        $consulta = sprintf("INSERT INTO cliente VALUES (DEFAULT, '%s', '%s', %d)"$nombre,$apellido, $edad);
+return $this->enlace->query($consulta);}
+
     function desactivarCliente($id){
         $consulta = "UPDATE cliente set activo = 0 WHERE id = " . $id;
         return $this->enlace->query($consulta);

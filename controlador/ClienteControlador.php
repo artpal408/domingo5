@@ -8,6 +8,14 @@ if (!empty($_POST['agregar'])){
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $edad = $_POST['edad'];
+
+    $ClienteModelo->agregarCliente($nombre, $apellido, $edad);
+
+    if ($estado == true){
+        echo "Exito al agregar cliente";
+    }else {
+        echo "Fallo al agregar cliente";
+    }
 }
 
 if (!empty ($_GET ['opcion'])){
