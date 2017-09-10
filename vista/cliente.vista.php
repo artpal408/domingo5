@@ -2,7 +2,7 @@
 <h1> Hola estas en la vista de clientes! </h1>
 <!--<span>--><?php //echo $mensaje ?><!-- </span>-->
 
-<form action="../controlador/ClienteControlador.php">
+<form method="post" action="../controlador/ClienteControlador.php">
 
     <input name="nombre"
            placeholder="Escriba su nombre"
@@ -19,7 +19,9 @@
            type="text">
     <br>
     <br>
-    <input type="submit">
+    <input name="agregar"
+           value="Agregar usuario"
+           type="submit">
 </form>
 
 <?php

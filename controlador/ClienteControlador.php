@@ -4,6 +4,12 @@ require_once '../modelo/Cliente.modelo.php';
 
 $clienteModelo = new ClienteModelo();
 
+if (!empty($_POST['agregar'])){
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $edad = $_POST['edad'];
+}
+
 if (!empty ($_GET ['opcion'])){
     if ($_GET['opcion']=="eliminar"){
         echo 'tu lo que quieres es eliminar';
