@@ -1,6 +1,26 @@
 
 <h1> Hola estas en la vista de clientes! </h1>
-<span><?php echo $mensaje ?> </span>
+<!--<span>--><?php //echo $mensaje ?><!-- </span>-->
+
+<form action="../controlador/ClienteControlador.php">
+
+    <input name="nombre"
+           placeholder="Escriba su nombre"
+           type="text">
+    <br>
+    
+    <input name="apellido"
+           placeholder="Escriba su apellido"
+           type="text">
+    <br>
+    
+    <input name="edad" 
+           placeholder="Digite su edad"
+           type="text">
+    <br>
+    <br>
+    <input type="submit">
+</form>
 
 <?php
 foreach ($clientes as $k => $v){

@@ -9,7 +9,7 @@ if (!empty ($_GET ['opcion'])){
         echo 'tu lo que quieres es eliminar';
         echo '</br>';
         echo 'ID a eliminar: ' . $_GET['id'];
-        $sePudo = $clienteModelo->eliminarCliente($_GET['id']);
+        $sePudo = $clienteModelo->desactivarCliente($_GET['id']);
 
         if ($sePudo == true) {
             echo "Exito al eliminar";
