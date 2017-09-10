@@ -20,7 +20,7 @@ class ClienteModelo{
         return $this->enlace->query($consulta);
     }
     function agregarCliente($nombre, $apellido, $edad){
-        $consulta = sprintf("INSERT INTO cliente VALUES (DEFAULT, '%s', '%s', %d)"$nombre,$apellido, $edad);
+        $consulta = sprintf("INSERT INTO cliente VALUES (DEFAULT, '%s', '%s', %d, DEFAULT )", $nombre,$apellido, $edad);
 return $this->enlace->query($consulta);}
 
     function desactivarCliente($id){
