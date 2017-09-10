@@ -9,7 +9,7 @@ if (!empty($_POST['agregar'])){
     $apellido = $_POST['apellido'];
     $edad = $_POST['edad'];
 
-    $ClienteModelo->agregarCliente($nombre, $apellido, $edad);
+    $estado = $clienteModelo->agregarCliente($nombre, $apellido, $edad);
 
     if ($estado == true){
         echo "Exito al agregar cliente";
