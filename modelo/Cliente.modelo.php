@@ -2,6 +2,7 @@
 
 require_once '../driver.php';
 
+
 class ClienteModelo{
     private $enlace;
 
@@ -11,6 +12,11 @@ class ClienteModelo{
     }
 
     function saludar (){
-        return 'ESTE MENSAJE VIENE DEL MODELO';
+        return 'ESTE MSJ VIENE DEL MODELO';
+    }
+
+    function obtenerClientes(){
+        $consulta = "SELECT * FROM cliente";
+        return $this->enlace->multiples_datos($consulta);
     }
 }

@@ -9,7 +9,7 @@
 class DMysqli
 {
     private $conexion;
-    const BASE = 'curso';
+    const BASE = 'cursoapp';
     const SERVER = '127.0.0.1';//'192.168.2.8';//'';//'192.168.2.7';//'192.168.3.154';
     const PASS = '';
     const USER = 'root';//'ies';
